@@ -1,0 +1,34 @@
+names:
+- A
+- Alphabets
+- B
+- C
+- D
+- E
+- G
+- H
+- I
+- L
+- M
+- N
+- O
+- P
+- Q
+- R
+- S
+- T
+- U
+- V
+- X
+- Y
+- Z
+nc: 23
+roboflow:
+  license: CC BY 4.0
+  project: bda-ygbct
+  url: https://universe.roboflow.com/bda-0gppo/bda-ygbct/dataset/2
+  version: 2
+  workspace: bda-0gppo
+test: C:\VI\BDA\Final\project\BDA-2\test
+train: C:\VI\BDA\Final\project\BDA-2\train
+val: C:\VI\BDA\Final\project\BDA-2\valid
