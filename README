@@ -1,0 +1,98 @@
+# Handwriting Analysis Project
+
+This project is a comprehensive system designed for recognizing handwritten characters using deep learning techniques. The system utilizes advanced models like VGG-16 and ResNet for accurate character recognition, achieving a test accuracy of 92%.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Motivation](#motivation)
+- [Dataset](#dataset)
+- [Preprocessing](#preprocessing)
+- [Model Architecture](#model-architecture)
+- [Results](#results)
+- [Conclusion and Future Work](#conclusion-and-future-work)
+- [How to Run](#how-to-run)
+- [Contributors](#contributors)
+
+## Introduction
+Handwriting recognition is an essential task in computer vision with applications in document scanning, signature verification, and automated data entry. This project leverages deep learning models like VGG-16 and ResNet to achieve high accuracy in character recognition tasks.
+
+## Motivation
+The need for handwriting recognition is growing rapidly across industries such as:
+- Document management
+- Signature verification
+- Form filling automation
+- Historical document preservation
+
+Deep learning models can effectively handle the complexity and variability of handwriting data, ensuring accurate results even with diverse handwriting styles.
+
+## Dataset
+- **Source**: Kaggle dataset featuring handwritten alphabets (uppercase and lowercase), digits, and special characters.
+- **Preparation**: Dataset preprocessing, augmentation, and annotation were handled using **Roboflow**.
+- **Split**: Divided into:
+  - Training Set: 331,059 samples
+  - Testing Set: 41,382 samples
+  - Validation Set: 41,382 samples
+
+## Preprocessing
+- Utilized **Roboflow** for dataset preparation.
+- Applied transformations like:
+  - Resizing
+  - Normalization
+  - Augmentation (rotation, scaling, translation, noise addition)
+- YOLO format annotations were used to improve object detection accuracy.
+
+## Model Architecture
+### CNN (Convolutional Neural Network)
+- Extracts hierarchical features for accurate character recognition.
+
+### VGG-16
+- 16-layer architecture with 3x3 convolution filters and max-pooling layers.
+- Achieved **93% accuracy** on the dataset.
+
+### ResNet-50
+- 50-layer residual network known for its effective gradient flow.
+- Achieved **89% accuracy** on the dataset.
+
+## Results
+| Model   | Accuracy |
+|:--------|:---------|
+| CNN      | 91%       |
+| VGG-16   | 93%       |
+| ResNet-50| 89%       |
+
+## Conclusion and Future Work
+The project successfully implemented handwriting recognition using VGG-16 and ResNet models. Future improvements may include:
+- Multilingual Support: Expanding recognition to multiple languages.
+- Architectural Improvements: Exploring transformers or more advanced CNN architectures.
+- Cursive Handwriting Analysis: Enhancing model capabilities to analyze cursive writing patterns.
+
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone <repository_link>
+   cd <project_directory>
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Train the model:
+   ```bash
+   python train.py
+   ```
+4. Evaluate the model:
+   ```bash
+   python evaluate.py
+   ```
+5. Test with custom images:
+   ```bash
+   python predict.py --image <image_path>
+   ```
+
+## Contributors
+- **Kothapalli Sravyanth**
+- **Mandiga Chetan Srikant**
+- **Alluri Ajay Reddy**
+
+Under the mentorship of **Dr. Yogesh Gupta**
+
